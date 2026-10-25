@@ -8,13 +8,13 @@ BASE_DIR = Path(__file__).resolve().parent[2]
 class Settings(BaseSettings):
     app_name: str = "PolicyPilot"
     app_env: str = "development"
-    openai_api_key: str = ""
+    gemini_api_key: str = ""
     tavily_api_key: str = ""
     pinecone_api_key: str = ""
     pinecone_index_name: str = "policypilot"
     pinecone_namespace: str = "company-hr-kb"
     embedding_model: str = "text-embedding-3-small"
-    openai_model: str = "gpt-4o-mini"
+    gemini_model: str = "gpt-4o-mini"
     top_k: int = 4
     max_retries: int = 1
     admin_api_key: str = "change-me-in-production"
