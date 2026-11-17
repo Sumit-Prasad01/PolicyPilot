@@ -216,4 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
-data/
+
+# Local runtime data (keep data/sample_kb in version control)
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+uploads/
